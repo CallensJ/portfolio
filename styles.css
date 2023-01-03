@@ -58,6 +58,7 @@ h1 {
   background-color: var(--primary-background-color);
   background: var(--linear-background);
   height: 100vh;
+  position: relative;
 }
 
 #navbar{
@@ -72,9 +73,7 @@ h1 {
   display: flex;
   font-size: 1.4rem;
   width: 20rem;
-  justify-content: space-between;
-  
-  
+  justify-content: space-between;  
 }
 .nav-item{
   color: var(--secondary-text-color);
@@ -83,4 +82,31 @@ h1 {
 .nav-item:hover{
   color: var(--primary-text-color);
   transition: var(--transition);
+}
+
+#welcome-title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: var(--primary-text-color);
+}
+
+.name{
+font-size: 10rem;
+}
+
+#social-links{
+  position: absolute;
+  bottom: 5%;
+  height: 25rem;
+  left: 1%;
+}
+
+.social-item{
+  padding: 1rem;
+}
+.social-icon{
+  width: 25px;
+  height: 25px;
 }
