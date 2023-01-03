@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400;600;700&display=swap');
 /* ==========================Color variables =======================================*/
 
 :root {
@@ -28,10 +27,12 @@
   list-style: none;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -43,7 +44,9 @@ h5 {
 }
 
 h1 {
+  font-family: 'Lato', sans-serif;
   font-size: 4.5rem;
+  
 }
 
 
@@ -51,3 +54,33 @@ h1 {
 
 /* ========================WELCOME SECTION ( HERO SECTION )=========================================*/
 
+#welcome-section{
+  background-color: var(--primary-background-color);
+  background: var(--linear-background);
+  height: 100vh;
+}
+
+#navbar{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  
+}
+.nav-items{
+  display: flex;
+  font-size: 1.4rem;
+  width: 20rem;
+  justify-content: space-between;
+  
+  
+}
+.nav-item{
+  color: var(--secondary-text-color);
+  font-size: 1.8rem;
+}
+.nav-item:hover{
+  color: var(--primary-text-color);
+  transition: var(--transition);
+}
