@@ -24,7 +24,10 @@
       <nav id="social-links">
         <ul>
           <li class="social-item">
-            <a href="https://github.com/CallensJ" target="_blank"
+            <a
+              href="https://github.com/CallensJ"
+              target="_blank"
+              id="profile-link"
               ><img
                 src="https://img.icons8.com/ios-filled/50/null/github.png"
                 class="social-icon"
@@ -32,7 +35,7 @@
             /></a>
           </li>
           <li class="social-item">
-            <a href="#"
+            <a href="#" target="_blank" id="profile-link"
               ><img
                 src="https://img.icons8.com/ios-filled/50/null/linkedin-circled--v1.png"
                 class="social-icon"
@@ -40,7 +43,7 @@
             /></a>
           </li>
           <li class="social-item">
-            <a href="#"
+            <a href="#" target="_blank" id="profile-link"
               ><img
                 src="https://img.icons8.com/ios/50 /null/twitter--v1.png"
                 class="social-icon"
@@ -50,10 +53,40 @@
         </ul>
       </nav>
     </section>
-    <section id="projects"></section>
+
+    <section id="projects">
+      <h2 class="title">My Projects</h2>
+      <div id="projects-area">
+        <div class="project-tile">
+          <img src="./img/Screenshot.png" alt="John" />
+          <h3>Arnold tribute</h3>
+          <p>Arnold Tribute page for FreecodeCamp webdesign certification</p>
+          <p><a href="https://callensj.github.io/Arnold-Tribute/" target="_blank"class="btn">Go to page</a></p>
+        </div>
+        <div class="project-tile">
+          <img src="./img/Screenshot.png" alt="John" />
+          <h3>Arnold tribute</h3>
+          <p>Arnold Tribute page for FreecodeCamp webdesign certification</p>
+          <p><a href="#" class="btn">Go to page</a></p>
+        </div>
+        <div class="project-tile">
+          <img src="./img/Screenshot.png" alt="John" />
+          <h3>Arnold tribute</h3>
+          <p>Arnold Tribute page for FreecodeCamp webdesign certification</p>
+          <p><a href="#" class="btn">Go to page</a></p>
+        </div>
+        <div class="project-tile">
+          <img src="./img/Screenshot.png" alt="John" />
+          <h3>Arnold tribute</h3>
+          <p>Arnold Tribute page for FreecodeCamp webdesign certification</p>
+          <p><a href="#" class="btn">Go to page</a></p>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="contact__bloc">
-        <h2 class="contact__bloc--title">Contact</h2>
+        <h2 class="title">Contact</h2>
         <p class="text">
           Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
           consectetur, adipisci velit..."
@@ -71,7 +104,7 @@
       </div>
       <div>
         <div class="contact__bloc">
-          <h2 class="contact__bloc--title">wanna keep in touch ?</h2>
+          <h2 class="title">wanna keep in touch ?</h2>
           <form id="form">
             <input
               type="text"
@@ -92,9 +125,14 @@
               name="tel"
               placeholder="Your Phone"
             /><br />
-            <textarea id="w3review" name="w3review" rows="1" cols="50" placeholder="Your Message">
-                
-                </textarea>
+            <textarea
+              id="w3review"
+              name="w3review"
+              rows="1"
+              cols="50"
+              placeholder="Your Message"
+            >
+            </textarea>
             <a href="#" class="btn">Send message</a>
           </form>
         </div>
