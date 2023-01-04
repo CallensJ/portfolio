@@ -51,12 +51,21 @@ h1 {
   font-weight: 900;
 }
 
+#title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+}
+
 /* ========================WELCOME SECTION ( HERO SECTION )=========================================*/
 
 #welcome-section {
   background-color: var(--primary-background-color);
   background: var(--linear-background);
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -66,6 +75,10 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 5rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 .nav-items {
   display: flex;
@@ -97,7 +110,7 @@ h1 {
 #social-links {
   position: absolute;
   bottom: 5%;
-  height: 25rem;
+  height: 20rem;
   left: 1%;
 }
 
@@ -107,13 +120,28 @@ h1 {
 .social-icon {
   width: 25px;
   height: 25px;
+  color: var(--primary-text-color);
 }
 
+@media only screen and (max-width: 400px) {
+  #social-links {
+    position: initial;
+  }
+  #social-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #welcome-title {
+    top: 40%;
+  }
+}
 /*===========================PROJECTS SECTION=====================================*/
 #projects {
   background-color: var(--secondary-background-color);
   padding: 10rem;
 }
+
 #projects-area {
   display: flex;
   justify-content: space-between;
@@ -146,6 +174,12 @@ h1 {
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 400px) {
+  #projects-area {
+    justify-content: center;
+  }
+}
+
 /* ========================CONTACT SECTION =========================================*/
 
 #contact {
@@ -162,13 +196,7 @@ h1 {
 .contact__bloc {
   padding: 5rem;
 }
-.title {
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2rem;
-  letter-spacing: 0.4rem;
-}
+
 .text {
   color: var(--secondary-text-color);
   font-size: 1.4rem;
@@ -241,4 +269,10 @@ textarea {
   padding: 1.5rem;
   margin: 2.5rem 0 3.5rem 0;
   display: block;
+}
+
+@media only screen and (max-width: 400px) {
+  #contact {
+    justify-content: center;
+  }
 }
